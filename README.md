@@ -8,6 +8,9 @@ EKS Cluster: I utilized a Terraform script to create an EKS cluster. While I use
 
 GitHub Action: Leveraging GitHub Action workflows for CI/CD purposes, the stages include building the Spring Boot code, generating the JAR file, creating a Docker image based on the JAR file and instructions provided in the Dockerfile, installing the required AWS CLI package, authenticating to AWS ECR, pushing the Docker image to Elastic Container Registry (ECR), and updating the AWS EKS cluster configuration and deploying the Kubernetes application.
 
+![Uploading image.png…]()
+
+
 SonarCloud has been implemented for Static application security testing and integrated with Gihub reposiroty, scan code results are available on the SonarCloud dashboard. 
 
 <img width="1419" alt="image" src="https://github.com/vishnushukla30/rakbank_springboot/assets/25581203/48d30c3c-8b05-4deb-9fec-64dd6e63578b">
