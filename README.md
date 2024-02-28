@@ -1,4 +1,4 @@
-AWS Keys: I am attached roles can be used in EC2 instance for accessing AWS resources where no need to provide the keys only I am role with required permission needed, here i am using secrets created for AWS access keys and secret keys, as encrypted secrets. These secrets can be defined at the repository level and accessed within GitHub workflows.
+AWS Keys: IAM attached roles can be used in EC2 instance for accessing AWS resources where no need to provide the keys only I am role with required permission needed, here i am using secrets created for AWS access keys and secret keys, as encrypted secrets. These secrets can be defined at the repository level and accessed within GitHub workflows.
 
 Local: Initially, I installed the Spring Boot application locally and tested it. During this phase, I encountered challenges such as dependency, version issues configuration issues.
 
