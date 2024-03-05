@@ -99,7 +99,7 @@ jobs:
             docker push 590733205684.dkr.ecr.me-central-1.amazonaws.com/springboot:${GITHUB_SHA}
       
   Deploy_to_EKS:
-        needs: [build]
+        needs: [Docker_build_ECR_push]
         runs-on: ubuntu-latest
         environment: production
         steps:
