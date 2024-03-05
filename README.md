@@ -35,5 +35,6 @@ Infrastructure as Code (IAC): Managing infrastructure as code with Terraform to 
 <img width="1432" alt="image" src="https://github.com/vishnushukla30/rakbank_springboot/assets/25581203/8ef19d68-532b-4b61-be3a-dcdf006d8981">
 
 
-<img width="804" alt="image" src="https://github.com/vishnushukla30/rakbank_springboot/assets/25581203/4cddf4f5-1945-446f-a065-b9c31bac80bb">
+<img width="805" alt="image" src="https://github.com/vishnushukla30/rakbank_springboot/assets/25581203/287c6999-a201-4959-a922-212a9917ae40">
+
 
