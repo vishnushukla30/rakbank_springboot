@@ -1,7 +1,7 @@
 name: rakbank
 
 on:
-  #push:
+  push:
     branches:
       - main
 
