@@ -58,7 +58,7 @@ jobs:
           name: app-jar
           path: target/*.jar
       
-  deploy:
+  Docker_build_ECR_push:
       needs: [build]
       runs-on: ubuntu-latest
       environment: production
@@ -97,9 +97,16 @@ jobs:
         run: |
             docker tag 590733205684.dkr.ecr.me-central-1.amazonaws.com/springboot:latest 590733205684.dkr.ecr.me-central-1.amazonaws.com/springboot:${GITHUB_SHA}
             docker push 590733205684.dkr.ecr.me-central-1.amazonaws.com/springboot:${GITHUB_SHA}
-
-      - name: Deploy to EKS
-        run: |
+      
+  Deploy_to_EKS:
+        needs: [build]
+        runs-on: ubuntu-latest
+        environment: production
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
+        - name: Deploy to EKS
+          run: |
             aws eks update-kubeconfig --region me-central-1 --name rakbank
             mkdir -p k8s
             export ECR_REPOSITORY_URL="590733205684.dkr.ecr.me-central-1.amazonaws.com/springboot:${GITHUB_SHA}"
